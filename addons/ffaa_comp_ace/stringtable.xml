@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+    <Package name="ffaa_comp_ace">
+        <Key ID="str_ace_ffaa_comp_ace_preloadedmissiledummy">
+            <English>Preloaded Missile Dummy</English>
+            <German>Vorgeladene Racketennachbildung</German>
+            <French>Missile préchargé</French>
+            <Czech>Přednabitá maketa rakety</Czech>
+            <Polish>Wstępnie załadowana atrapa pocisku</Polish>
+            <Spanish>Misil Precargado</Spanish>
+            <Hungarian>Előtöltött műrakéta</Hungarian>
+            <Russian>Предзаряженная ракетная болванка</Russian>
+            <Italian>Missile inerte precaricato</Italian>
+            <Portuguese>Míssel inerte pré-carregado</Portuguese>
+            <Japanese>仮置きのミサイルをあらかじめ装填</Japanese>
+        </Key>
+    </Package>
+</Project>
