@@ -1,0 +1,50 @@
+### Español ###
+
+Este addon es requerido para conseguir que el FFAA MOD funcione junto con el mod ACE 3.
+
+Este addon hace que sean compatible las siguientes caracteríticas:
+
+- Ajuste correcto de la calibración dependiendo de la óptica.
+- Ajuste correcto de la longitud / calibre del arma y municiones.
+- Recalentamiento del Arma.
+- C90 / C100 desechables.
+- Insonorización / protección de cascos y uniformes.
+- ExtendedEventhandler soportados para todos los vehículos.
+- ACE FastRope para los helicopteros compatibles.
+- Gafas del mod con oscurecimiento en primera persona.
+- Logística de vehículos (rearme y reabastecimiento)
+
+
+-------------------------------------------------------------------
+[url=http://www.ffaamod.es/wp-content/uploads/downloads/FFAAMODACE3COMP.rar]Mirror[/url]
+
+[url=https://github.com/FFAAMOD/ffaa_comp_ace]Repositorio Público en GitHub[/url]
+
+
+Pagina oficial : http://ffaamod.es
+Reporte de errores : [url=https://github.com/FFAAMOD/ffaa_comp_ace/issues]GitHub[/url]
+
+### English ###
+
+This addon is needed to ensure full compatibility with ACE 3.
+
+This will bring the following features:
+
+- Proper adjustment for sniper scopes
+- Proper adjustment depending on the lengh and caliber of weapons and ammunitions.
+- Realistic weapon heating
+- Disposable C90 / C100
+- Soundproofing / protection of helmets and uniforms.
+- ACE FastRope for compatible helicopters.
+- Glasses of the FFAA MOD with ACE-style.
+- Vehicle logistics (rearming and refueling)
+
+
+-------------------------------------------------------------------
+[url=https://github.com/FFAAMOD/ffaa_comp_ace/releases]Mirror[/url]
+
+[url=https://github.com/FFAAMOD/ffaa_comp_ace]Repositorio Público en GitHub[/url]
+
+
+Official Wepage : http://ffaamod.es
+Issues : [url=https://github.com/FFAAMOD/ffaa_comp_ace/issues]GitHub[/url]
