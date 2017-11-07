@@ -22,3 +22,8 @@ A video of the issue might be helpful in resolving it faster.
 0. Make your proposed changes.
 0. When finish, push it to your fork and [submit a pull request][pr].
 0. Wait for your pull request to be reviewed and merged.
+
+[fork]: https://github.com/FFAAMOD/ffaa_comp_ace/fork
+[pr]: https://github.com/FFAAMOD/ffaa_comp_ace/compare
+[style]: http://ben.balter.com/jekyll-style-guide/
+[ACE]: https://github.com/acemod/ACE3
