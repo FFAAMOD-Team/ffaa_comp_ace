@@ -20,12 +20,9 @@ To contribute here, simply [fork][fork] this repository and submit your pull req
 
 Refer to the official and up-to-date repository for the documentation and information about [ACE][ACE].
 
-## Submitting a pull request
+## Contributing
 
-0. [Fork][fork] and clone <a href="https://github.com/FFAAMOD/ffaa_comp_ace.git">this</a> repository to your local folder
-0. Make your proposed changes.
-0. When finish, push it to your fork and [submit a pull request][pr].
-0. Wait for your pull request to be reviewed and merged.
+Follow the [Contributing guidelines](https://github.com/FFAAMOD/ffaa_comp_ace/blob/master/.github/CONTRIBUTING.md)
 
 ## Resources
 

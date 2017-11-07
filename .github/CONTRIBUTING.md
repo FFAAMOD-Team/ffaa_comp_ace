@@ -11,3 +11,14 @@ Indicate if the issue appears on stable or development version. In case it is th
 Head over to the [FFAA MOD GitHub issue tracker](https://github.com/FFAAMOD/ffaa_comp_ace/issues) and press the [New issue](https://github.com/FFAAMOD/ffaa_comp_ace/issues/new) button in the top right corner. Add a descriptive title and complete the issue template.
 
 A video of the issue might be helpful in resolving it faster.
+
+# Contribute
+
+## [Setting Up The Development Environment](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html) accordinly with the sweet ACE 3 guidelines
+
+## Submitting a pull request
+
+0. [Fork][fork] and clone <a href="https://github.com/FFAAMOD/ffaa_comp_ace.git">this</a> repository to your local folder
+0. Make your proposed changes.
+0. When finish, push it to your fork and [submit a pull request][pr].
+0. Wait for your pull request to be reviewed and merged.
