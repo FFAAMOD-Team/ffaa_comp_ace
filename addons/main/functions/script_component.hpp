@@ -1,1 +1,1 @@
-#include "\z\ace\addons\ffaa_comp_ace\script_component.hpp"
+#include "\z\ffaa_comp_ace\addons\main\script_component.hpp"
