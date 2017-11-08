@@ -72,7 +72,7 @@ dssignfile = ""
 prefix = "ffaa_comp_ace"
 pbo_name_prefix = "ffaa_comp_ace_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "logo.paa", "meta.cpp"]
+importantFiles = ["mod.cpp", "logo_ffaa_ace_ca.paa", "meta.cpp"]
 versionFiles = ["mod.cpp"]
 
 ciBuild = False # Used for CI builds

@@ -6,7 +6,7 @@ import subprocess
 
 ######## GLOBALS #########
 MAINPREFIX = "z"
-PREFIX = "ffaa_comp_ace"
+PREFIX = "ffaa_comp_ace_"
 ##########################
 
 def mod_time(path):
