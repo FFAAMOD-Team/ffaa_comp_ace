@@ -11,24 +11,24 @@ class CfgMagazines {
     };
     class ffaa_mag_c90;
     class ffaa_mag_c100;
-	class ACE_PreloadedMissileDummy_C90_FFAA: ffaa_mag_c90 {  // The dummy magazine
+	class ACE_PreloadedMissileDummy_C90_FFAA: ffaa_mag_c90 {
         author="$STR_FFAA_AUTOR_FFAAMOD";
         scope = 1;
         scopeArsenal = 1;
-        displayName = CSTRING(PreloadedMissileDummy);
-        picture = QPATHTOEF(common,UI\blank_CO.paa);
+        displayName = "$STR_ACE_DISPOSABLE_PRELOADEDMISSILEDUMMY";
+        picture = "a3\ui_f\data\IGUI\Cfg\Targeting\Empty_ca.paa";
         weaponPoolAvailable = 0;
         mass = 0;
     };
 	class ACE_FiredMissileDummy_C90_FFAA: ACE_PreloadedMissileDummy_C90_FFAA {
 		count = 0;
 	};
-	class ACE_PreloadedMissileDummy_C100_FFAA: ffaa_mag_c100 {  // The dummy magazine
+	class ACE_PreloadedMissileDummy_C100_FFAA: ffaa_mag_c100 {
         author="$STR_FFAA_AUTOR_FFAAMOD";
         scope = 1;
         scopeArsenal = 1;
-        displayName = CSTRING(PreloadedMissileDummy);
-        picture = QPATHTOEF(common,UI\blank_CO.paa);
+        displayName = "$STR_ACE_DISPOSABLE_PRELOADEDMISSILEDUMMY";
+        picture = "a3\ui_f\data\IGUI\Cfg\Targeting\Empty_ca.paa";
         weaponPoolAvailable = 0;
         mass = 0;
     };

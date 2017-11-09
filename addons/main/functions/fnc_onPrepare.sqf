@@ -9,7 +9,7 @@
  * Amount of time to wait before deploying ropes <NUMBER>
  *
  * Example:
- * [_vehicle] call ace_ffaa_comp_ace_fnc_onPrepare
+ * [_vehicle] call ffaa_comp_ace_main_fnc_onPrepare
  *
  * Public: No
  */
@@ -20,7 +20,7 @@ private ["_fries", "_waitTime"];
 
 _waitTime = 2;
 
-_vehicle animate ["ani_rampa", 0];
+_vehicle animateSource ["ani_Rampa", 1];
 _vehicle animateDoor ["PuertaIzquierda", 1];
 _vehicle animateDoor ["PuertaDerecha", 1];
 

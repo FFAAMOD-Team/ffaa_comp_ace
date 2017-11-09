@@ -1,10 +1,10 @@
 #define EQUIP_FRIES_ATTRIBUTE class Attributes { \
     class EGVAR(fastroping,equipFRIES) { \
-        property = QEGVAR(fastroping,equipFRIES); \
+        property = "ace_fastroping_equipFRIES"; \
         control = "Checkbox"; \
-        displayName = ECSTRING(fastroping,Eden_equipFRIES); \
-        tooltip = ECSTRING(fastroping,Eden_equipFRIES_Tooltip); \
-        expression = QUOTE([_this] call EFUNC(fastroping,equipFRIES)); \
+        displayName = "$ACE_FASTROPING_EDEN_EQUIPOFRIES"; \
+        tooltip = "$ACE_FASTROPING_EDEN_EQUIPFRIES_TOOLTIP"; \
+        expression = QUOTE([_this] call ace_fastroping_equipFRIES); \
         typeName = "BOOL"; \
         condition = "objectVehicle"; \
         defaultValue = false; \
@@ -55,21 +55,21 @@ class CfgVehicles {
 	class B_Soldier_base_F;	
 	// Boats
 	class ffaa_ar_lcm: Boat_Armed_01_base_F {
-		EGVAR(refuel,fuelCapacity) = 4880;
+		ace_refuel_fuelCapacity = 4880;
 	};
 	class ffaa_ar_zodiac_hurricane: Boat_Armed_01_base_F {
-		EGVAR(refuel,fuelCapacity) = 200;
+		ace_refuel_fuelCapacity = 200;
 	};	
 	class ffaa_ar_supercat : Boat_Transport_02_base_F {
-		EGVAR(refuel,fuelCapacity) = 200;
+		ace_refuel_fuelCapacity = 200;
 	};	
 	// Air
 	class ffaa_et_ch47_base : Helicopter_Base_H {
-		EGVAR(fastroping,enabled) = 1;
-        EGVAR(fastroping,ropeOrigins)[] = {"p_rapel1", "p_rapel2","p_rapel3","p_rapel4"};
-        EGVAR(fastroping,onCut) = QFUNC(onCut);
-        EGVAR(fastroping,onPrepare) = QFUNC(onPrepare);
-		EGVAR(refuel,fuelCapacity) = 3914;
+		ace_fastroping_enabled = 1;
+		ace_fastroping_ropeOrigins[] = {"p_rapel1", "p_rapel2","p_rapel3","p_rapel4"};
+		ace_fastroping_onCut = QFUNC(onCut); 			// ffaa_comp_ace_main_fnc_onCut;
+		ace_fastroping_onPrepare = QFUNC(onPrepare);	// ffaa_comp_ace_main_fnc_onPrepare;
+		ace_refuel_fuelCapacity = 3914;
 		class TransportMagazines
 		{
 			class _xx_ffaa_cuerda
@@ -78,13 +78,14 @@ class CfgVehicles {
 				count = 0;
 			};
 		};
+		// EQUIP_FRIES_ATTRIBUTE;
     };
 	class ffaa_famet_cougar_base : Helicopter_Base_H {
-		EGVAR(fastroping,enabled) = 1;
-        EGVAR(fastroping,ropeOrigins)[] = {"p_rapel1", "p_rapel2","p_rapel3","p_rapel4"};
-        EGVAR(fastroping,onCut) = QFUNC(onCut);
-        EGVAR(fastroping,onPrepare) = QFUNC(onPrepare);
-		EGVAR(refuel,fuelCapacity) = 1360;
+		ace_fastroping_enabled = 1;
+		ace_fastroping_ropeOrigins[] = {"p_rapel1", "p_rapel2","p_rapel3","p_rapel4"};
+		ace_fastroping_onCut = QFUNC(onCut); 			// ffaa_comp_ace_main_fnc_onCut;
+		ace_fastroping_onPrepare = QFUNC(onPrepare);	// ffaa_comp_ace_main_fnc_onPrepare;
+		ace_refuel_fuelCapacity = 1360;
 		class TransportMagazines
 		{
 			class _xx_ffaa_cuerda
@@ -93,9 +94,10 @@ class CfgVehicles {
 				count = 0;
 			};
 		};
+		// EQUIP_FRIES_ATTRIBUTE;
     };
 	class ffaa_famet_tigre_base: Helicopter_Base_F {
-		EGVAR(refuel,fuelCapacity) = 1420;
+		ace_refuel_fuelCapacity = 1420;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 ACE_fcs_enabled=1;
@@ -108,19 +110,19 @@ class CfgVehicles {
         };
     };
     class ffaa_ea_hercules_base: Plane_Base_F {
-        EGVAR(refuel,fuelCapacity) = 25704;
-        EGVAR(cargo,space) = 4;
-        EGVAR(cargo,hasCargo) = 1;
+		ace_refuel_fuelCapacity = 25704;
+		ace_cargo_space = 4;
+		ace_cargo_hasCargo = 1;
     };
 	class ffaa_et_searcherIII: UAV {
-		GVAR(fuelCapacity) = 50;
+		ace_refuel_fuelCapacity = 50;
 	};
 	class ffaa_reaper_base: UAV_02_base_F {
-		GVAR(fuelCapacity) = 270;
+		ace_refuel_fuelCapacity = 270;
 	};
 	// Tanks
 	class ffaa_et_pizarro: Tank_F {
-		EGVAR(refuel,fuelCapacity) = 700;
+		ace_refuel_fuelCapacity = 700;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 ACE_fcs_enabled=1;
@@ -133,7 +135,7 @@ class CfgVehicles {
         };
     };
     class ffaa_et_leopardo_base: Tank_F {
-		EGVAR(refuel,fuelCapacity) = 1160;
+		ace_refuel_fuelCapacity = 1160;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 ACE_fcs_enabled=1;
@@ -146,55 +148,55 @@ class CfgVehicles {
         };
     };
 	class ffaa_et_toa : Tank_F {
-		EGVAR(refuel,fuelCapacity) = 360;
+		ace_refuel_fuelCapacity = 360;
 	};
 	// Trucks
 	class ffaa_m250_base : Truck_03_base_F {
-		EGVAR(refuel,fuelCapacity) = 600;
+		ace_refuel_fuelCapacity = 600;
 	};
 	class ffaa_et_m250_base_blin : ffaa_m250_base {};
 	class ffaa_et_m250_combustible_blin: ffaa_et_m250_base_blin {
         transportFuel = 0;
-        EGVAR(refuel,hooks)[] = {{0.2,-3.55,0.5},{-0.2,-3.55,0.5}, {-1.2,0,0.3},{1.2,0,0.3}};
-        EGVAR(refuel,fuelCargo) = 10000;
+		ace_refuel_hooks[] = {{0.2,-3.55,0.5},{-0.2,-3.55,0.5}, {-1.2,0,0.3},{1.2,0,0.3}};
+		ace_refuel_fuelCargo = 10000;
 	};
 	class ffaa_et_m250_municion_blin : ffaa_et_m250_base_blin {
         transportAmmo = 0;
-        EGVAR(rearm,defaultSupply) = 1200;
+		ace_rearm_defaultSupply = 1200;
 	};
 	class ffaa_et_m250_repara_municion_blin : ffaa_et_m250_base_blin {
         transportAmmo = 0;
-        EGVAR(rearm,defaultSupply) = 500;
+		ace_rearm_defaultSupply = 500;
 		transportRepair = 0;
-        EGVAR(repair,canRepair) = 1;
+		ace_repair_canRepair = 1;
 	};
 	class ffaa_et_pegaso_base : Truck_03_base_F {
-		EGVAR(refuel,fuelCapacity) = 500;
+		ace_refuel_fuelCapacity = 500;
 	};
 	class ffaa_et_pegaso_combustible: ffaa_et_pegaso_base {
         transportFuel = 0;
-        EGVAR(refuel,hooks)[] = {{0.2,-2.5,0.3},{-0.2,-2.5,0.3}, {-1,0.2,0.18},{1,0.2,0.18}};
-        EGVAR(refuel,fuelCargo) = 8000;
+		ace_refuel_hooks[] = {{0.2,-2.5,0.3},{-0.2,-2.5,0.3}, {-1,0.2,0.18},{1,0.2,0.18}};
+		ace_refuel_fuelCargo = 8000;
 	};
 	class ffaa_et_pegaso_municion: ffaa_et_pegaso_base {
         transportAmmo = 0;
-        EGVAR(rearm,defaultSupply) = 1000;
+		ace_rearm_defaultSupply = 1000;
 	};
 	class ffaa_et_pegaso_repara_municion: ffaa_et_pegaso_base {
         transportAmmo = 0;
-        EGVAR(rearm,defaultSupply) = 400;
+		ace_rearm_defaultSupply = 400;
 		transportRepair = 0;
-        EGVAR(repair,canRepair) = 1;
+		ace_repair_canRepair = 1;
 	};
 	// Cars
 	class ffaa_et_anibal : Car_F {
-		EGVAR(refuel,fuelCapacity) = 78;
+		ace_refuel_fuelCapacity = 78;
 	};
 	class ffaa_et_rg31_base : MRAP_01_base_F {
-		EGVAR(refuel,fuelCapacity) = 302;
+		ace_refuel_fuelCapacity = 302;
 	};
 	class ffaa_et_vamtac_base : MRAP_01_base_F {
-		EGVAR(refuel,fuelCapacity) = 95;
+		ace_refuel_fuelCapacity = 95;
 	};
 	// Soldiers
 	class ffaa_pilot_harri : B_Soldier_base_F {
@@ -206,5 +208,4 @@ class CfgVehicles {
 	class ffaa_pilot_her_des : B_Soldier_base_F {
 		 ACE_GForceCoef = 0.8;
 	};
-	
 };
