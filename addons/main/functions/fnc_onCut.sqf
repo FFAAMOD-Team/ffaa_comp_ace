@@ -9,7 +9,7 @@
  * Amount of time to wait before cutting ropes <NUMBER>
  *
  * Example:
- * [_vehicle] call ace_ffaa_comp_ace_fnc_onCut
+ * [_vehicle] call ffaa_comp_ace_main_fnc_onCut
  *
  * Public: No
  */
@@ -22,7 +22,7 @@ if !(isNull _fries) then {
     _fries animate ["extendHookRight", 0];
     _fries animate ["extendHookLeft", 0];
     [{
-		_vehicle animate ["ani_rampa", 1];
+		_vehicle animateSource ["ani_Rampa", 0];
 		_vehicle animateDoor ["PuertaIzquierda", 0];
 		_vehicle animateDoor ["PuertaDerecha", 0];
         _this setVariable [QGVAR(doorsLocked), false, true];
@@ -30,7 +30,7 @@ if !(isNull _fries) then {
 
     4
 } else {
-	_vehicle animate ["ani_rampa", 1];
+	_vehicle animateSource ["ani_Rampa", 0];
 	_vehicle animateDoor ["PuertaIzquierda", 0];
 	_vehicle animateDoor ["PuertaDerecha", 0];
     _vehicle setVariable [QGVAR(doorsLocked), false, true];
