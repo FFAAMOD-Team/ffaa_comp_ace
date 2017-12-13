@@ -4,7 +4,7 @@
 
 If you have found an issue with the compatibility with FFAA MOD and ACE3 please make sure that ACE3 and FFAAMOD really is the cause of the problem. To do this try to reproduce the issue with using only `@CBA_A3`, `@ace`, `@FFAAMOD` and `@FFAA MOD ACE3 Compatibility Addon` on a newly created mission.
 
-Indicate if the issue appears on stable or development version. In case it is the development version, please also include the commit SHA-1 hash.
+Indicate if the issue appears on stable or development version.
 
 ## Reporting the issue
 
@@ -14,7 +14,9 @@ A video of the issue might be helpful in resolving it faster.
 
 # Contribute
 
-## [Setting Up The Development Environment](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html) accordinly with the sweet ACE 3 guidelines
+## Your local development environment
+
+[Setting Up The Development Environment](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html) accordinly with the sweet ACE 3 guidelines
 
 ## Submitting a pull request
 
