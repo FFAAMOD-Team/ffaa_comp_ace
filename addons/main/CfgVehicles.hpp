@@ -42,9 +42,7 @@ class CfgVehicles {
     class Helicopter_Base_F: Helicopter {
         class Eventhandlers;
     };
-	class Helicopter_Base_H: Helicopter_Base_F {
-        class Eventhandlers;
-    };
+	class Helicopter_Base_H;
 	class Plane_Base_F;
 	class UAV;
 	// Specific base classes
@@ -53,6 +51,7 @@ class CfgVehicles {
 	class Boat_Transport_02_base_F;
 	class MRAP_01_base_F;
 	class B_Soldier_base_F;	
+    class Heli_light_01_base_F;
 	// Boats
 	class ffaa_ar_lcm: Boat_Armed_01_base_F {
 		ace_refuel_fuelCapacity = 4880;
@@ -108,6 +107,25 @@ class CfgVehicles {
                 discreteDistanceInitIndex=0;
             };
         };
+    };
+    class ffaa_nh90_base: Helicopter_Base_H {
+		ace_fastroping_enabled = 1;
+		ace_fastroping_ropeOrigins[] = {"p_rapel1","p_rapel2","p_rapel3","p_rapel4"};
+		ace_fastroping_onCut = QFUNC(onCut); 			// ffaa_comp_ace_main_fnc_onCut;
+		ace_fastroping_onPrepare = QFUNC(onPrepare);	// ffaa_comp_ace_main_fnc_onPrepare;
+		ace_refuel_fuelCapacity = 1360;
+		class TransportMagazines
+		{
+			class _xx_ffaa_cuerda
+			{
+				magazine = "ffaa_cuerda";
+				count = 0;
+			};
+		};
+		// EQUIP_FRIES_ATTRIBUTE;
+    };
+    class ffaa_ec135_base: Heli_light_01_base_F {
+		ace_refuel_fuelCapacity = 800;
     };
     class ffaa_ea_hercules_base: Plane_Base_F {
 		ace_refuel_fuelCapacity = 25704;
@@ -196,7 +214,10 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 302;
 	};
 	class ffaa_et_vamtac_base : MRAP_01_base_F {
-		ace_refuel_fuelCapacity = 95;
+		ace_refuel_fuelCapacity = 200;
+	};
+    class ffaa_et_lince_base : MRAP_01_base_F {
+		ace_refuel_fuelCapacity = 180;
 	};
 	// Soldiers
 	class ffaa_pilot_harri : B_Soldier_base_F {
