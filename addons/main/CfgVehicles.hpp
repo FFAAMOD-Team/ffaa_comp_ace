@@ -220,13 +220,21 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 180;
 	};
 	// Soldiers
-	class ffaa_pilot_harri : B_Soldier_base_F {
+    class ffaa_soldado_base;
+	class ffaa_famet_uniforme_b : ffaa_soldado_base {
+		 ACE_GForceCoef = 0.8;
+	};
+    class ffaa_piloto_famet : ffaa_soldado_base {
+        ACE_GForceCoef = 0.8;
+    };
+    class ffaa_pilot_her : ffaa_soldado_base {
+        ACE_GForceCoef = 0.8;
+    };
+	class ffaa_pilot_harri_uniforme : ffaa_soldado_base {
 		 ACE_GForceCoef = 0.55;
 	};
-	class ffaa_pilot_her : B_Soldier_base_F {
-		 ACE_GForceCoef = 0.8;
-	};
-	class ffaa_pilot_her_des : B_Soldier_base_F {
-		 ACE_GForceCoef = 0.8;
-	};
+    class ffaa_pilot_harri : ffaa_soldado_base {
+        ACE_GForceCoef = 0.55;
+    };
+    
 };
