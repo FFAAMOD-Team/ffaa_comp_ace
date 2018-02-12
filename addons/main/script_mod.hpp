@@ -3,7 +3,7 @@
 #define MAINPREFIX z
 #define PREFIX ffaa_comp_ace
 
-#include "script_version.hpp"
+#include "\z\ace\addons\main\script_version.hpp"
 
 #define VERSION MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD

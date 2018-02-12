@@ -8,7 +8,8 @@
 #include "Extended_Eventhandlers.hpp"
 
 class CfgPatches {
-	 class ADDON {
+    // Sin MACRO porque no sería retrocompatible
+    class ace_ffaa_comp_ace {
         name = COMPONENT_NAME;
         units[] = {};
         weapons[]={"ACE_ffaa_armas_c90_used","ACE_ffaa_armas_c90_used"};
