@@ -153,7 +153,7 @@ class CfgWeapons {
     };
     class ffaa_armas_hkg36k_normal: ffaa_armas_hkg36e_normal {
         ACE_barrelTwist=177.8;
-        ACE_barrelLength=318;
+        ACE_barrelLength=480;
     };
 
     class ffaa_armas_cetme_l: Rifle_Base_F {
@@ -168,14 +168,10 @@ class CfgWeapons {
         ACE_barrelTwist=120.8;
         ACE_barrelLength=177.1654;
     };
-    class ffaa_armas_cetme_e: ffaa_armas_cetme_c {
-        ACE_barrelTwist=120.8;
-        ACE_barrelLength=177.1654;
-    };
     // Fusiles de precision
     class ffaa_armas_aw: Rifle_Base_F {
-        ACE_barrelTwist=203;
-        ACE_barrelLength=305;
+        ACE_barrelTwist=254;
+        ACE_barrelLength=660;
         ACE_Overheating_Dispersion[]={0,-0.001,0.001,0.003};
         ACE_Overheating_SlowdownFactor[]={1,1,1,0.9};
         ACE_Overheating_JamChance[]={0,0.0003,0.0015,0.0075};
@@ -188,8 +184,8 @@ class CfgWeapons {
         ACE_barrelLength=736.7;
     };
     class ffaa_armas_aw50: ffaa_armas_m95 {
-        ACE_barrelTwist=203;
-        ACE_barrelLength=305;
+        ACE_barrelTwist=381;
+        ACE_barrelLength=686;
         ACE_Overheating_Dispersion[]={0,-0.001,0.001,0.003};
         ACE_Overheating_SlowdownFactor[]={1,1,1,0.9};
         ACE_Overheating_JamChance[]={0,0.0003,0.0015,0.0075};
@@ -209,15 +205,15 @@ class CfgWeapons {
         ACE_overheating_slowdownFactor[]={1,1,1,0.9};
         ACE_overheating_jamChance[]={0,0.0003,0.0015,0.0075};
         ACE_barrelTwist=304.8;
-        ACE_barrelLength=550;
+        ACE_barrelLength=533;
     };
     class ffaa_armas_ameli: Rifle_Base_F {
         ACE_overheating_allowSwapBarrel=1;
         ACE_overheating_dispersion[]={0,0.001,0.001,0.003};
         ACE_overheating_slowdownFactor[]={1,1,1,0.9};
         ACE_overheating_jamChance[]={0,0.0003,0.0015,0.0075};
-        ACE_barrelTwist=177.8;
-        ACE_barrelLength=480;
+        ACE_barrelTwist=305;
+        ACE_barrelLength=400;
     };
     // Lanzadores
     class ffaa_armas_c100: Launcher_Base_F {
@@ -265,11 +261,11 @@ class CfgWeapons {
     };
     class ffaa_armas_ump: ffaa_armas_hkmp5a5 {
         ACE_barrelTwist=100;
-        ACE_barrelLength=    78.74016;
+        ACE_barrelLength=78.74016;
     };
     class ffaa_armas_p90: Rifle_Base_F {
         ACE_barrelTwist=254;
-        ACE_barrelLength=    103.5433;
+        ACE_barrelLength=103.5433;
     };
     // PISTOLAS
     class ffaa_armas_usp: Pistol_Base_F {
