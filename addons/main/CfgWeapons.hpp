@@ -153,24 +153,24 @@ class CfgWeapons {
     };
     class ffaa_armas_hkg36k_normal: ffaa_armas_hkg36e_normal {
         ACE_barrelTwist=177.8;
-        ACE_barrelLength=480;
+        ACE_barrelLength=318;
     };
 
     class ffaa_armas_cetme_l: Rifle_Base_F {
-        ACE_barrelTwist=100.8;
-        ACE_barrelLength=157.48;
+        ACE_barrelTwist=178;
+        ACE_barrelLength=400;
     };
     class ffaa_armas_cetme_lc: ffaa_armas_cetme_l {
-        ACE_barrelTwist=100.8;
-        ACE_barrelLength=125.984;
+        ACE_barrelTwist=178;
+        ACE_barrelLength=320;
     };
     class ffaa_armas_cetme_c: Rifle_Base_F {
-        ACE_barrelTwist=120.8;
-        ACE_barrelLength=177.1654;
+        ACE_barrelTwist=178;
+        ACE_barrelLength=450;
     };
     // Fusiles de precision
     class ffaa_armas_aw: Rifle_Base_F {
-        ACE_barrelTwist=254;
+        ACE_barrelTwist=305;
         ACE_barrelLength=660;
         ACE_Overheating_Dispersion[]={0,-0.001,0.001,0.003};
         ACE_Overheating_SlowdownFactor[]={1,1,1,0.9};
@@ -252,25 +252,29 @@ class CfgWeapons {
     };
     // SUBFUSILES
     class ffaa_armas_hkmp510a3: Rifle_Base_F {
-        ACE_barrelTwist=254;
-        ACE_barrelLength=228.6;
+        ACE_barrelTwist=250;
+        ACE_barrelLength=146;
     };
     class ffaa_armas_hkmp5a5 : ffaa_armas_hkmp510a3 {
-        ACE_barrelTwist=254;
-        ACE_barrelLength=114.3;
+        ACE_barrelTwist=250;
+        ACE_barrelLength=225;
+    };
+    class ffaa_armas_hkmp5pdw : ffaa_armas_hkmp510a3 {
+        ACE_barrelTwist=250;
+        ACE_barrelLength=148;
     };
     class ffaa_armas_ump: ffaa_armas_hkmp5a5 {
-        ACE_barrelTwist=100;
-        ACE_barrelLength=78.74016;
+        ACE_barrelTwist=305;
+        ACE_barrelLength=200;
     };
     class ffaa_armas_p90: Rifle_Base_F {
-        ACE_barrelTwist=254;
-        ACE_barrelLength=103.5433;
+        ACE_barrelTwist=231;
+        ACE_barrelLength=260;
     };
     // PISTOLAS
     class ffaa_armas_usp: Pistol_Base_F {
         ACE_barrelTwist=406.4;
-        ACE_barrelLength=112.014;
+        ACE_barrelLength=108;
     };
     class ffaa_armas_p226 : ffaa_armas_usp {
         ACE_barrelTwist=248.92;
@@ -278,12 +282,12 @@ class CfgWeapons {
     };
     class ffaa_armas_fnp9 : ffaa_armas_usp {
         ACE_barrelTwist=406.4;
-        ACE_barrelLength=114.3;
+        ACE_barrelLength=102;
     };
     // Escopeta
     class ffaa_armas_sdass : Rifle_Base_F {
-        ACE_barrelTwist=106.4;
-        ACE_barrelLength=196.85;
+        ACE_barrelTwist=0;
+        ACE_barrelLength=510;
     };
     // Uniformes
     class Uniform_Base;
