@@ -4,10 +4,6 @@
 </p>
 <h1 align="center">FFAA MOD & ACE COMPATIBILITY ADDON</h1>
 <p align="center">
-  <a href="https://github.com/FFAAMOD/ffaa_comp_ace/issues">
-    <img src="http://img.shields.io/github/issues-raw/FFAAMOD/ffaa_comp_ace.svg?style=flat&label=Issues"
-         alt="Issues" />
-  </a>
   <a href="https://opensource.org/licenses/GPL-3.0">
     <img src="https://img.shields.io/badge/License-GPL-yellow.svg"
          alt="License" />
