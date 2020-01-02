@@ -4,7 +4,10 @@ class CfgWeapons {
     class UGL_F;
     class ItemCore;
     class InventoryOpticsItem_Base_F;
-    class Launcher_Base_F;
+    class WeaponHolder;
+    class Launcher_Base_F : WeaponHolder {
+        class WeaponSlotsInfo;
+    };
     class Rifle_Long_Base_F;
     // Opticas
     class ffaa_optic_acog: ItemCore  {
@@ -217,38 +220,88 @@ class CfgWeapons {
     };
     // Lanzadores
     class ffaa_armas_c100: Launcher_Base_F {
+        scope = 2;
+        scopeArsenal = 2;
+        baseWeapon = "ffaa_armas_c100";
+        magazines[]={"CBA_FakeLauncherMagazine"};
+        reloadMagazineSound[] = {"",1,1};
+        magazineReloadTime = 0.1;
         ACE_overpressure_angle=60;
         ACE_overpressure_range=6;
         ACE_overpressure_damage=0.8;
-        ace_reloadlaunchers_enabled=0;
-        ACE_UsedTube="ACE_ffaa_armas_c100_used";
-        magazines[]={"ACE_PreloadedMissileDummy_C100_FFAA"};
+        ACE_overpressure_priority=1;
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 310; // launcher 100, magazine 210
+        };
     };
     class ACE_ffaa_armas_c100_used : ffaa_armas_c100 {
         scope=1;
-        ACE_isUsedLauncher=1;
+        scopeArsenal = 1;
+        baseWeapon = "ACE_ffaa_armas_c100_used";
         author="$STR_FFAA_AUTOR_FFAAMOD";
         displayName="$STR_FFAA_C100_USED";
         descriptionShort="$STR_FFAA_C100_USED";
-        magazines[]={"ACE_FiredMissileDummy_C100_FFAA"};
         weaponPoolAvailable=0;
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 100;
+        };
+    };
+    class ACE_ffaa_armas_c100_ready: ffaa_armas_c100 {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+        baseWeapon = "ACE_ffaa_armas_c100_ready";
+        magazines[] = {"ffaa_mag_c100"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 100;
+        };
     };
     class ffaa_armas_c90: Launcher_Base_F {
-        ACE_overpressure_angle=60;
-        ACE_overpressure_range=6;
-        ACE_overpressure_damage=0.8;
-        ace_reloadlaunchers_enabled=0;
-        ACE_UsedTube="ACE_ffaa_armas_c90_used";
-        magazines[]={"ACE_PreloadedMissileDummy_C90_FFAA"};
+        scope = 2;
+        scopeArsenal = 2;
+        baseWeapon = "ffaa_armas_c90";
+        // magazineWell[] = {};
+        magazines[] = {"CBA_FakeLauncherMagazine"};
+        reloadMagazineSound[] = {"",1,1};
+        magazineReloadTime = 0.1;
+        ACE_overpressure_angle=30;
+        ACE_overpressure_range=2;
+        ACE_overpressure_damage=0.6;
+        ACE_overpressure_priority=1;
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 150; // launcher 88, magazine 62
+        };
+
     };
+    
     class ACE_ffaa_armas_c90_used : ffaa_armas_c90 {
         scope=1;
-        ACE_isUsedLauncher=1;
+        scopeArsenal = 1;
+        baseWeapon = "ACE_ffaa_armas_c90_used";
         author="$STR_FFAA_AUTOR_FFAAMOD";
         displayName="$STR_FFAA_C90_USED";
         descriptionShort="$STR_FFAA_C90_USED";
-        magazines[]={"ACE_FiredMissileDummy_C90_FFAA"};
         weaponPoolAvailable=0;
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 88;
+        };
+    };
+    
+    class ACE_ffaa_armas_c90_ready: ffaa_armas_c90 {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+        baseWeapon = "ACE_ffaa_armas_c90_ready";
+        magazines[] = {"ffaa_mag_c90"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 88;
+        };
     };
     // SUBFUSILES
     class ffaa_armas_hkmp510a3: Rifle_Base_F {
