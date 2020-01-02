@@ -24,6 +24,10 @@ Refer to the official and up-to-date repository for the documentation and inform
 
 Follow the [Contributing guidelines](https://github.com/FFAAMOD/ffaa_comp_ace/blob/master/.github/CONTRIBUTING.md)
 
+## Issues
+
+Please report any issue in [our own feedback tracker](https://gitlab.com/FFAAMOD-Team/FFAAMOD/issues/)
+
 ## Resources
 
 - [Contributing to Open Source on GitHub](https://guides.github.com/activities/contributing-to-open-source/)
