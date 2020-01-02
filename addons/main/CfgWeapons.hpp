@@ -231,7 +231,7 @@ class CfgWeapons {
         ACE_overpressure_damage=0.8;
         ACE_overpressure_priority=1;
         class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 310; // launcher 100, magazine 210
+            mass = 310; // launcher 100 (4,5 KG) , magazine 210 (9,5 KG)
         };
     };
     class ACE_ffaa_armas_c100_used : ffaa_armas_c100 {
@@ -272,7 +272,7 @@ class CfgWeapons {
         ACE_overpressure_damage=0.6;
         ACE_overpressure_priority=1;
         class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 150; // launcher 88, magazine 62
+            mass = 150; // launcher 88 (3,9 KG), magazine 62 (2,8 KG)
         };
 
     };
