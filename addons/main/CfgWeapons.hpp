@@ -276,6 +276,7 @@ class CfgWeapons {
         };
 
     };
+    
     class ACE_ffaa_armas_c90_used : ffaa_armas_c90 {
         scope=1;
         scopeArsenal = 1;
@@ -288,6 +289,7 @@ class CfgWeapons {
             mass = 88;
         };
     };
+    
     class ACE_ffaa_armas_c90_ready: ffaa_armas_c90 {
         author="$STR_FFAA_AUTOR_FFAAMOD";
         scope = 1;
@@ -302,19 +304,19 @@ class CfgWeapons {
         };
     };
     // SUBFUSILES
-    class ffaa_armas_hkmp5pdw : Rifle_Base_F {
-        ACE_barrelTwist=250;
-        ACE_barrelLength=148;
-    };
-    class ffaa_armas_hkmp510a3: ffaa_armas_hkmp5pdw {
+    class ffaa_armas_hkmp510a3: Rifle_Base_F {
         ACE_barrelTwist=250;
         ACE_barrelLength=146;
     };
-    class ffaa_armas_hkmp5a5 : ffaa_armas_hkmp5pdw {
+    class ffaa_armas_hkmp5a5 : ffaa_armas_hkmp510a3 {
         ACE_barrelTwist=250;
         ACE_barrelLength=225;
     };
-    class ffaa_armas_ump: ffaa_armas_hkmp5pdw {
+    class ffaa_armas_hkmp5pdw : ffaa_armas_hkmp510a3 {
+        ACE_barrelTwist=250;
+        ACE_barrelLength=148;
+    };
+    class ffaa_armas_ump: ffaa_armas_hkmp5a5 {
         ACE_barrelTwist=305;
         ACE_barrelLength=200;
     };
