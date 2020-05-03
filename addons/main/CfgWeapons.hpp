@@ -237,78 +237,86 @@ class CfgWeapons {
     class ACE_ffaa_armas_c100_used : ffaa_armas_c100 {
         scope=1;
         scopeArsenal = 1;
-class CfgWeapons {
-    class Pistol_Base_F;
-    class Rifle_Base_F;
-    class UGL_F;
-    class ItemCore;
-    class InventoryOpticsItem_Base_F;
-    class WeaponHolder;
-    class Launcher_Base_F : WeaponHolder {
-        class WeaponSlotsInfo;
-    };
-    class Rifle_Long_Base_F;
-    // Opticas
-    class ffaa_optic_acog: ItemCore  {
-        ACE_ScopeAdjust_Vertical[]={ -4, 30 };
-        ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
-        ACE_ScopeAdjust_VerticalIncrement=0.1;
-        ACE_ScopeAdjust_HorizontalIncrement=0.1;
-        class ItemInfo: InventoryOpticsItem_Base_F {
-            class OpticsModes {
-                class ffaa_ARCO {
-                    discreteDistance[]={100};
-                    discreteDistanceInitIndex=0;
-                };
-            };
+        baseWeapon = "ACE_ffaa_armas_c100_used";
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        displayName="$STR_FFAA_C100_USED";
+        descriptionShort="$STR_FFAA_C100_USED";
+        weaponPoolAvailable=0;
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 100;
         };
     };
-    class ffaa_optic_susat: ItemCore {
-        ACE_ScopeAdjust_Vertical[]={ -4, 30 };
-        ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
-        ACE_ScopeAdjust_VerticalIncrement=0.1;
-        ACE_ScopeAdjust_HorizontalIncrement=0.1;
-    };
-    class ffaa_optic_g36_holo: ItemCore {
-        class ItemInfo: InventoryOpticsItem_Base_F {
-            class OpticsModes {
-                class ffaa_ARCO {
-                    discreteDistance[]={200};
-                    discreteDistanceInitIndex=0;
-                };
-            };
+    class ACE_ffaa_armas_c100_ready: ffaa_armas_c100 {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+        baseWeapon = "ACE_ffaa_armas_c100_ready";
+        magazines[] = {"ffaa_mag_c100"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 100;
         };
     };
-    class ffaa_optic_mg4_g36: ItemCore {
-        ACE_ScopeAdjust_Vertical[]={ -4, 30 };
-        ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
-        ACE_ScopeAdjust_VerticalIncrement=1;
-        ACE_ScopeAdjust_HorizontalIncrement=1;
-        class ItemInfo: InventoryOpticsItem_Base_F {
-            class OpticsModes {
-                class ffaa_ARCO {
-                    discreteDistance[]={200};
-                    discreteDistanceInitIndex=0;
-                };
-            };
+    class ffaa_armas_c90: Launcher_Base_F {
+        scope = 2;
+        scopeArsenal = 2;
+        baseWeapon = "ffaa_armas_c90";
+        // magazineWell[] = {};
+        magazines[] = {"CBA_FakeLauncherMagazine"};
+        reloadMagazineSound[] = {"",1,1};
+        magazineReloadTime = 0.1;
+        ACE_overpressure_angle=30;
+        ACE_overpressure_range=2;
+        ACE_overpressure_damage=0.6;
+        ACE_overpressure_priority=1;
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 150; // launcher 88 (3,9 KG), magazine 62 (2,8 KG)
+        };
+
+    };
+    
+    class ACE_ffaa_armas_c90_used : ffaa_armas_c90 {
+        scope=1;
+        scopeArsenal = 1;
+        baseWeapon = "ACE_ffaa_armas_c90_used";
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        displayName="$STR_FFAA_C90_USED";
+        descriptionShort="$STR_FFAA_C90_USED";
+        weaponPoolAvailable=0;
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 88;
+        };
+    };
+    
+    class ACE_ffaa_armas_c90_ready: ffaa_armas_c90 {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+        baseWeapon = "ACE_ffaa_armas_c90_ready";
+        magazines[] = {"ffaa_mag_c90"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+        };
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 88;
         };
     };
     // SUBFUSILES
-    class ffaa_armas_hkmp5pdw : Rifle_Base_F {
-        ACE_barrelTwist=250;
-        ACE_barrelLength=148;
-    };
-    class ffaa_armas_hkmp510a3: ffaa_armas_hkmp5pdw {
+    class ffaa_armas_hkmp510a3: Rifle_Base_F {
         ACE_barrelTwist=250;
         ACE_barrelLength=146;
     };
-    class ffaa_armas_hkmp5a5 : ffaa_armas_hkmp5pdw {
+    class ffaa_armas_hkmp5a5 : ffaa_armas_hkmp510a3 {
         ACE_barrelTwist=250;
         ACE_barrelLength=225;
     };
-    class ffaa_armas_ump: ffaa_armas_hkmp5pdw {
+    class ffaa_armas_hkmp5pdw : ffaa_armas_hkmp510a3 {
+        ACE_barrelTwist=250;
+        ACE_barrelLength=148;
+    };
+    class ffaa_armas_ump: ffaa_armas_hkmp5a5 {
         ACE_barrelTwist=305;
         ACE_barrelLength=200;
     };
