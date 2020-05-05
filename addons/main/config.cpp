@@ -6,6 +6,7 @@
 #include "CfgAmmo.hpp"
 #include "CfgGlasses.hpp"
 #include "Extended_Eventhandlers.hpp"
+#include "CfgCarryHandleTypes.hpp"
 
 class CfgPatches {
     // No se usa MACRO para mantener la retrocompatibilidad

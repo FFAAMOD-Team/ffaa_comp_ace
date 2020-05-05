@@ -68,7 +68,8 @@ class CfgWeapons {
             };
         };
     };
-    class ffaa_optic_lv: ItemCore {
+    CARRY_HANDLE(ffaa_optic_enasa,ffaa_StepScope)
+	class ffaa_optic_lv: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
         ACE_ScopeAdjust_VerticalIncrement=0.1;
@@ -82,7 +83,8 @@ class CfgWeapons {
             };
         };
     };
-    class ffaa_optic_3x12x50: ItemCore {
+    CARRY_HANDLE(ffaa ffaa_optic_lv,ffaa_StepScope)
+	class ffaa_optic_3x12x50: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
         ACE_ScopeAdjust_VerticalIncrement=0.1;
@@ -96,6 +98,7 @@ class CfgWeapons {
             };
         };
     };
+	CARRY_HANDLE(ffaa_optic_3x12x50,ffaa_StepScope)
     class ffaa_optic_Mk4_v1: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
@@ -110,6 +113,7 @@ class CfgWeapons {
             };
         };
     };
+	CARRY_HANDLE(ffaa_optic_Mk4_v1,ffaa_StepScope)
     class ffaa_optic_Mk4_v2: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
@@ -124,7 +128,8 @@ class CfgWeapons {
             };
         };
     };
-    class ffaa_optic_5x25x56: ItemCore {
+    CARRY_HANDLE(ffaa_optic_Mk4_v2,ffaa_StepScope)
+	class ffaa_optic_5x25x56: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
         ACE_ScopeAdjust_VerticalIncrement=0.1;
@@ -138,6 +143,7 @@ class CfgWeapons {
             };
         };
     };
+	CARRY_HANDLE(ffaa_optic_5x25x56,ffaa_StepScope)
     class ffaa_acc_puntero_ir: ItemCore {
         ACE_laserpointer=1;
     };
@@ -153,12 +159,49 @@ class CfgWeapons {
         class ffaa_armas_ag36: UGL_F {
             magazines[] += {"ACE_HuntIR_M203"};
         };
-    };
+		CBA_CarryHandleType = "FFAA_G36_CarryHandle";
+
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 2;
+        baseWeapon = "ffaa_armas_hkg36e_normal";
+
+        class CBA_ScriptedOptic: FFAA_G36CarryHandleScriptedOptic_base {};
+        weaponInfoType = "CBA_ScriptedOptic";
+
+        modelOptics = "\x\cba\addons\optics\cba_optic_big_90.p3d";
+
+        class OpticsModes {
+			class Scope: FFAA_G36CarryHandleScope_base {};
+		};
+	};
     class ffaa_armas_hkg36k_normal: ffaa_armas_hkg36e_normal {
         ACE_barrelTwist=177.8;
         ACE_barrelLength=318;
     };
 
+	// Disable CBA_ScriptedOptic in the following classes
+	class ffaa_armas_hkg36e_tir : ffaa_armas_hkg36e_normal
+	{
+		CBA_CarryHandleType = "";
+		weaponInfoType = "RscWeaponZeroing";
+	};
+	class ffaa_armas_hkg36k_tir: ffaa_armas_hkg36k_normal
+	{
+		CBA_CarryHandleType = "";
+		weaponInfoType = "RscWeaponZeroing";
+	};
+	class ffaa_armas_hkag36e;
+	class ffaa_armas_hkag36e_tir : ffaa_armas_hkag36e 
+	{
+		CBA_CarryHandleType = "";
+		weaponInfoType = "RscWeaponZeroing";
+	};
+	class ffaa_armas_hkag36k;
+	class ffaa_armas_hkag36k_tir : ffaa_armas_hkag36k
+	{
+		CBA_CarryHandleType = "";
+		weaponInfoType = "RscWeaponZeroing";
+	};
     class ffaa_armas_cetme_l: Rifle_Base_F {
         ACE_barrelTwist=178;
         ACE_barrelLength=400;
