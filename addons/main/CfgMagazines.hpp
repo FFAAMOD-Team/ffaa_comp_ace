@@ -11,8 +11,12 @@ class CfgMagazines {
     };
     class ffaa_mag_c90: CA_Magazine {
         mass = 62;
+		scope = 1;
+		allowedSlots[] = {};
     };
     class ffaa_mag_c100: CA_Magazine {
         mass = 210;
+		scope = 1;
+		allowedSlots[] = {};
     };
 };

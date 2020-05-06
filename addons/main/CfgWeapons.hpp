@@ -250,7 +250,7 @@ class CfgWeapons {
         author="$STR_FFAA_AUTOR_FFAAMOD";
         scope = 1;
         scopeArsenal = 1;
-        baseWeapon = "ACE_ffaa_armas_c100_ready";
+		baseWeapon = "ffaa_armas_c100";
         magazines[] = {"ffaa_mag_c100"};
         class EventHandlers {
             fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
@@ -294,7 +294,7 @@ class CfgWeapons {
         author="$STR_FFAA_AUTOR_FFAAMOD";
         scope = 1;
         scopeArsenal = 1;
-        baseWeapon = "ACE_ffaa_armas_c90_ready";
+        baseWeapon = "ffaa_armas_c90";
         magazines[] = {"ffaa_mag_c90"};
         class EventHandlers {
             fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
