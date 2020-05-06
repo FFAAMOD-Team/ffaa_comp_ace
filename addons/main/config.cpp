@@ -8,6 +8,7 @@
 #include "Extended_Eventhandlers.hpp"
 #include "CfgCarryHandleTypes.hpp"
 
+
 class CfgPatches {
     // No se usa MACRO para mantener la retrocompatibilidad
     // class ADDON  : ace_ffaa_comp_ace {};
