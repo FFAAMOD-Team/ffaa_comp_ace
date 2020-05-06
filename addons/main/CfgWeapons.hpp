@@ -304,19 +304,19 @@ class CfgWeapons {
         };
     };
     // SUBFUSILES
-    class ffaa_armas_hkmp510a3: Rifle_Base_F {
-        ACE_barrelTwist=250;
-        ACE_barrelLength=146;
-    };
-    class ffaa_armas_hkmp5a5 : ffaa_armas_hkmp510a3 {
-        ACE_barrelTwist=250;
-        ACE_barrelLength=225;
-    };
-    class ffaa_armas_hkmp5pdw : ffaa_armas_hkmp510a3 {
+	class ffaa_armas_hkmp5pdw : Rifle_Base_F {
         ACE_barrelTwist=250;
         ACE_barrelLength=148;
     };
-    class ffaa_armas_ump: ffaa_armas_hkmp5a5 {
+    class ffaa_armas_hkmp510a3: ffaa_armas_hkmp5pdw {
+        ACE_barrelTwist=250;
+        ACE_barrelLength=146;
+    };
+    class ffaa_armas_hkmp5a5 : ffaa_armas_hkmp5pdw {
+        ACE_barrelTwist=250;
+        ACE_barrelLength=225;
+    };
+    class ffaa_armas_ump: ffaa_armas_hkmp5pdw {
         ACE_barrelTwist=305;
         ACE_barrelLength=200;
     };
