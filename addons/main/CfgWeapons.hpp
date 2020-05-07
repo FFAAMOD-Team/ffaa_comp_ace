@@ -1,3 +1,58 @@
+class asdg_OpticRail1913;
+class ffaa_CowsSlot: asdg_OpticRail1913
+{
+	class compatibleItems;
+};
+// compatible items info of the weapons optic slot
+class ffaa_CowsSlot_G36 : ffaa_CowsSlot
+{
+	class compatibleItems : compatibleItems
+	{
+		ffaa_optic_g36_holo = 1;
+        ffaa_optic_Yorris_g36 = 1;
+        ffaa_optic_Aco_g36 = 1;
+        ffaa_optic_ACO_grn_g36 = 1;
+        ffaa_optic_ACO_smg_g36 = 1;
+        ffaa_optic_ACO_grn_smg_g36 = 1;
+        ffaa_optic_Holosight_g36 = 1;
+        ffaa_optic_Holosight_blk_F_g36 = 1;
+        ffaa_optic_Holosight_khk_F_g36 = 1;
+        ffaa_optic_Holosight_arid_F_g36 = 1;
+        ffaa_optic_Holosight_lush_F_g36 = 1;
+        ffaa_optic_Holosight_smg_g36 = 1;
+        ffaa_optic_Holosight_smg_blk_F_g36 = 1;
+        ffaa_optic_Holosight_smg_khk_F_g36 = 1;
+	};
+};
+
+// shared optic mode of the carry handle optic
+class FFAA_G36CarryHandleScope_base {	
+	opticsID = 1;
+	useModelOptics = 1;
+	opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+	opticsZoomMin = 0.1380;
+	opticsZoomMax = 0.1380;
+	opticsZoomInit = 0.1380;
+	distanceZoomMin = 300;
+	distanceZoomMax = 300;
+	memoryPointCamera = "opticView";
+	visionMode[] = {"Normal"};
+	opticsFlare = 1;
+	opticsDisablePeripherialVision = 1;
+	cameraDir = "";
+	discreteDistance[] = {200, 400, 600, 800};
+	discreteDistanceInitIndex = 0;
+};
+// shared scripted 2d reticle data
+class FFAA_G36CarryHandleScriptedOptic_base {
+    reticleTexture = "\ffaa_armas\Reticles\data\g36_cross.paa";
+    reticleTextureSize = 0.8518;
+
+    bodyTexture = "\ffaa_armas\Reticles\data\scope_view4_ca.paa";
+    bodyTextureNight = "\ffaa_armas\Reticles\data\scope_view4_ca.paa";
+    bodyTextureSize = 1.35;
+};
+
 class CfgWeapons {
     class Pistol_Base_F;
     class Rifle_Base_F;
@@ -8,7 +63,21 @@ class CfgWeapons {
     class Launcher_Base_F : Launcher {
         class WeaponSlotsInfo;
     };
-    // Opticas
+    // Opticas con Carry Handle (solo kollimator)
+    BASECLASS_ACC_CARRY_HANDLE(optic_Yorris,ItemCore,ACO)
+    BASECLASS_ACC_CARRY_HANDLE(optic_ACO_grn,ItemCore,ACO)
+    BASECLASS_ACC_CARRY_HANDLE(optic_Aco,ItemCore,ACO)
+    BASECLASS_ACC_CARRY_HANDLE(optic_ACO_grn_smg,ItemCore,ACO)
+    BASECLASS_ACC_CARRY_HANDLE(optic_ACO_smg,ItemCore,ACO)
+    BASECLASS_ACC_CARRY_HANDLE(optic_Holosight,ItemCore,ACO)
+    ACC_CARRY_HANDLE(optic_Holosight_blk_F,optic_Holosight,ACO)
+    ACC_CARRY_HANDLE(optic_Holosight_khk_F,optic_Holosight,ACO)
+    ACC_CARRY_HANDLE(optic_Holosight_arid_F,optic_Holosight,ACO)
+    ACC_CARRY_HANDLE(optic_Holosight_lush_F,optic_Holosight,ACO)
+    BASECLASS_ACC_CARRY_HANDLE(optic_Holosight_smg,ItemCore,ACO)
+    ACC_CARRY_HANDLE(optic_Holosight_smg_blk_F,optic_Holosight_smg,ACO)
+    ACC_CARRY_HANDLE(optic_Holosight_smg_khk_F,optic_Holosight_smg,ACO)
+    // Opticas FFAA
     class ffaa_optic_acog: ItemCore  {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
@@ -30,6 +99,8 @@ class CfgWeapons {
         ACE_ScopeAdjust_HorizontalIncrement=0.1;
     };
     class ffaa_optic_g36_holo: ItemCore {
+		scope = 1;
+		author="$STR_FFAA_AUTOR_FFAAMOD";
         class ItemInfo: InventoryOpticsItem_Base_F {
             class OpticsModes {
                 class ffaa_ARCO {
@@ -67,7 +138,7 @@ class CfgWeapons {
             };
         };
     };
-    class ffaa_optic_lv: ItemCore {
+	class ffaa_optic_lv: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
         ACE_ScopeAdjust_VerticalIncrement=0.1;
@@ -81,7 +152,7 @@ class CfgWeapons {
             };
         };
     };
-    class ffaa_optic_3x12x50: ItemCore {
+	class ffaa_optic_3x12x50: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
         ACE_ScopeAdjust_VerticalIncrement=0.1;
@@ -123,7 +194,7 @@ class CfgWeapons {
             };
         };
     };
-    class ffaa_optic_5x25x56: ItemCore {
+	class ffaa_optic_5x25x56: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
         ACE_ScopeAdjust_VerticalIncrement=0.1;
@@ -147,17 +218,42 @@ class CfgWeapons {
         ACE_overheating_jamChance[]={0,0.0003,0.0015,0.0075};
         ACE_barrelTwist=177.8;
         ACE_barrelLength=480;
+        
         discreteDistance[]={200};
         discreteDistanceInitIndex=0;
         class ffaa_armas_ag36: UGL_F {
             magazines[] += {"ACE_HuntIR_M203"};
         };
-    };
+		CBA_CarryHandleType = "FFAA_G36_CarryHandle";
+
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 2;
+        baseWeapon = "ffaa_armas_hkg36e_normal";
+
+        class CBA_ScriptedOptic: FFAA_G36CarryHandleScriptedOptic_base {};
+        weaponInfoType = "CBA_ScriptedOptic";
+
+        modelOptics = "\x\cba\addons\optics\cba_optic_big_90.p3d";
+
+        class OpticsModes {
+			class Scope: FFAA_G36CarryHandleScope_base {};
+		};
+	};
     class ffaa_armas_hkg36k_normal: ffaa_armas_hkg36e_normal {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 2;
+        baseWeapon = "ffaa_armas_hkg36k_normal";
         ACE_barrelTwist=177.8;
         ACE_barrelLength=318;
     };
 
+	// Disable CBA_ScriptedOptic in the following classes
+    BASECLASS_WEAPON_CARRY_HANDLE(ffaa_armas_hkag36e,ffaa_armas_hkg36e_normal)
+    BASECLASS_WEAPON_CARRY_HANDLE(ffaa_armas_hkag36k,ffaa_armas_hkag36e)
+    UNLOAD_WEAPON_CARRY_HANDLE(ffaa_armas_hkg36e_tir,ffaa_armas_hkg36e_normal)
+    UNLOAD_WEAPON_CARRY_HANDLE(ffaa_armas_hkg36k_tir,ffaa_armas_hkg36k_normal)
+    UNLOAD_WEAPON_CARRY_HANDLE(ffaa_armas_hkag36e_tir,ffaa_armas_hkag36e)
+    UNLOAD_WEAPON_CARRY_HANDLE(ffaa_armas_hkag36k_tir,ffaa_armas_hkag36k)
     class ffaa_armas_cetme_l: Rifle_Base_F {
         ACE_barrelTwist=178;
         ACE_barrelLength=400;
