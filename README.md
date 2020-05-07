@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://ffaamod.es/wp-content/uploads/2014/04/Logo-ffaa-6-cabecera.jpg"
+  <img src="https://raw.githubusercontent.com/FFAAMOD/ffaa_comp_ace/master/Logo_FFAA_ACE3_cabecera.png"
        width="480" />
 </p>
 <h1 align="center">FFAA MOD & ACE COMPATIBILITY ADDON</h1>
