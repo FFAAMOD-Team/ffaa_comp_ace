@@ -59,11 +59,10 @@ class CfgWeapons {
     class UGL_F;
     class ItemCore;
     class InventoryOpticsItem_Base_F;
-    class WeaponHolder;
-    class Launcher_Base_F : WeaponHolder {
+    class Launcher;
+    class Launcher_Base_F : Launcher {
         class WeaponSlotsInfo;
     };
-    class Rifle_Long_Base_F;
     // Opticas con Carry Handle (solo kollimator)
     BASECLASS_ACC_CARRY_HANDLE(optic_Yorris,ItemCore,ACO)
     BASECLASS_ACC_CARRY_HANDLE(optic_ACO_grn,ItemCore,ACO)
@@ -290,7 +289,7 @@ class CfgWeapons {
         ACE_Overheating_JamChance[]={0,0.0003,0.0015,0.0075};
     };
     // Ametralladoras
-    class ffaa_armas_mg4: Rifle_Long_Base_F {
+    class ffaa_armas_mg4: Rifle_Base_F {
         ACE_overheating_allowSwapBarrel=1;
         ACE_overheating_dispersion[]={0,0.001,0.002,0.004};
         ACE_overheating_slowdownFactor[]={1,1,1,0.9};
@@ -298,7 +297,7 @@ class CfgWeapons {
         ACE_barrelTwist=177.8;
         ACE_barrelLength=480;
     };
-    class ffaa_armas_mg3: Rifle_Long_Base_F {
+    class ffaa_armas_mg3: Rifle_Base_F {
         ACE_overheating_allowSwapBarrel=1;
         ACE_overheating_dispersion[]={0,-0.001,0.001,0.003};
         ACE_overheating_slowdownFactor[]={1,1,1,0.9};
@@ -326,7 +325,7 @@ class CfgWeapons {
         ACE_overpressure_range=6;
         ACE_overpressure_damage=0.8;
         ACE_overpressure_priority=1;
-        class WeaponSlotsInfo: WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 310; // launcher 100 (4,5 KG) , magazine 210 (9,5 KG)
         };
     };
@@ -346,7 +345,7 @@ class CfgWeapons {
         author="$STR_FFAA_AUTOR_FFAAMOD";
         scope = 1;
         scopeArsenal = 1;
-        baseWeapon = "ACE_ffaa_armas_c100_ready";
+		baseWeapon = "ffaa_armas_c100";
         magazines[] = {"ffaa_mag_c100"};
         class EventHandlers {
             fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
@@ -367,12 +366,10 @@ class CfgWeapons {
         ACE_overpressure_range=2;
         ACE_overpressure_damage=0.6;
         ACE_overpressure_priority=1;
-        class WeaponSlotsInfo: WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 150; // launcher 88 (3,9 KG), magazine 62 (2,8 KG)
         };
-
     };
-    
     class ACE_ffaa_armas_c90_used : ffaa_armas_c90 {
         scope=1;
         scopeArsenal = 1;
@@ -385,12 +382,11 @@ class CfgWeapons {
             mass = 88;
         };
     };
-    
     class ACE_ffaa_armas_c90_ready: ffaa_armas_c90 {
         author="$STR_FFAA_AUTOR_FFAAMOD";
         scope = 1;
         scopeArsenal = 1;
-        baseWeapon = "ACE_ffaa_armas_c90_ready";
+        baseWeapon = "ffaa_armas_c90";
         magazines[] = {"ffaa_mag_c90"};
         class EventHandlers {
             fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
@@ -404,11 +400,11 @@ class CfgWeapons {
         ACE_barrelTwist=250;
         ACE_barrelLength=146;
     };
-    class ffaa_armas_hkmp5a5 : ffaa_armas_hkmp510a3 {
+    class ffaa_armas_hkmp5a5: ffaa_armas_hkmp510a3 {
         ACE_barrelTwist=250;
         ACE_barrelLength=225;
     };
-    class ffaa_armas_hkmp5pdw : ffaa_armas_hkmp510a3 {
+    class ffaa_armas_hkmp5pdw: ffaa_armas_hkmp5a5 {
         ACE_barrelTwist=250;
         ACE_barrelLength=148;
     };

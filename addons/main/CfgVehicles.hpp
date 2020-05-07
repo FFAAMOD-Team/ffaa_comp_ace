@@ -52,6 +52,20 @@ class CfgVehicles {
 	class MRAP_01_base_F;
 	class B_Soldier_base_F;	
     class Heli_light_01_base_F;
+    class Heli_Transport_02_base_F;
+    class MBT_01_base_F: Tank_F	{
+        class Turrets : Turrets
+        {
+            class MainTurret;
+        };
+	};
+	class APC_Tracked_03_base_F: Tank_F	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+    class APC_Tracked_02_base_F;
 	// Boats
 	class ffaa_ar_lcm: Boat_Armed_01_base_F {
 		ace_refuel_fuelCapacity = 4880;
@@ -108,7 +122,7 @@ class CfgVehicles {
             };
         };
     };
-    class ffaa_nh90_base: Helicopter_Base_H {
+    class ffaa_nh90_base: Heli_Transport_02_base_F {
 		ace_fastroping_enabled = 1;
 		ace_fastroping_ropeOrigins[] = {"p_rapel1","p_rapel2","p_rapel3","p_rapel4"};
 		ace_fastroping_onCut = QFUNC(onCut); 			// ffaa_comp_ace_main_fnc_onCut;
@@ -139,7 +153,7 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 270;
 	};
 	// Tanks
-	class ffaa_et_pizarro: Tank_F {
+	class ffaa_et_pizarro: APC_Tracked_03_base_F {
 		ace_refuel_fuelCapacity = 700;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
@@ -152,7 +166,7 @@ class CfgVehicles {
             };
         };
     };
-    class ffaa_et_leopardo_base: Tank_F {
+    class ffaa_et_leopardo_base: MBT_01_base_F {
 		ace_refuel_fuelCapacity = 1160;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
@@ -165,7 +179,7 @@ class CfgVehicles {
             };
         };
     };
-	class ffaa_et_toa : Tank_F {
+	class ffaa_et_toa : APC_Tracked_02_base_F {
 		ace_refuel_fuelCapacity = 360;
 	};
 	// Trucks
