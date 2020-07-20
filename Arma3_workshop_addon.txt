@@ -16,13 +16,11 @@ Este addon hace que sean compatible las siguientes caracteríticas:
 
 
 -------------------------------------------------------------------
-[url=http://www.ffaamod.es/wp-content/uploads/downloads/FFAAMODACE3COMP.rar]Mirror[/url]
-
 [url=https://github.com/FFAAMOD/ffaa_comp_ace]Repositorio Público en GitHub[/url]
 
 
 Pagina oficial : http://ffaamod.es
-Reporte de errores : [url=https://github.com/FFAAMOD/ffaa_comp_ace/issues]GitHub[/url]
+Reporte de errores [url=https://gitlab.com/FFAAMOD-Team/FFAAMOD/-/issues]aquí[/url]
 
 ### English ###
 
@@ -41,10 +39,8 @@ This will bring the following features:
 
 
 -------------------------------------------------------------------
-[url=https://github.com/FFAAMOD/ffaa_comp_ace/releases]Mirror[/url]
-
-[url=https://github.com/FFAAMOD/ffaa_comp_ace]Repositorio Público en GitHub[/url]
+[url=https://github.com/FFAAMOD/ffaa_comp_ace]Public Repository[/url]
 
 
-Official Wepage : http://ffaamod.es
-Issues : [url=https://github.com/FFAAMOD/ffaa_comp_ace/issues]GitHub[/url]
+Official Webpage : http://ffaamod.es
+Issues go [url=https://gitlab.com/FFAAMOD-Team/FFAAMOD/-/issues]Here[/url]
