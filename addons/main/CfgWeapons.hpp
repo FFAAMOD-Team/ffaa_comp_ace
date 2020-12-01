@@ -262,6 +262,14 @@ class CfgWeapons {
         ACE_barrelTwist=178;
         ACE_barrelLength=450;
     };
+	class ffaa_armas_hk416A5_short_blk : Rifle_Base_F {
+		ACE_barrelTwist=178;
+        ACE_barrelLength=450;
+	};
+	class ffaa_armas_hk417A2_long_blk : Rifle_Base_F {
+		ACE_barrelTwist=279;
+        ACE_barrelLength=508;
+	};
     // Fusiles de precision
     class ffaa_armas_aw: Rifle_Base_F {
         ACE_barrelTwist=305;
