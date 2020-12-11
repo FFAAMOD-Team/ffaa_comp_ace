@@ -50,15 +50,7 @@ class CfgVehicles {
 	class Boat_Armed_01_base_F;
 	class Boat_Transport_02_base_F;
 	class MRAP_01_base_F;
-	class B_Soldier_base_F;	
     class Heli_light_01_base_F;
-    class Heli_Transport_02_base_F;
-    class MBT_01_base_F: Tank_F	{
-        class Turrets : Turrets
-        {
-            class MainTurret;
-        };
-	};
 	class APC_Tracked_03_base_F: Tank_F	{
 		class Turrets: Turrets
 		{
@@ -122,7 +114,7 @@ class CfgVehicles {
             };
         };
     };
-    class ffaa_nh90_base: Heli_Transport_02_base_F {
+    class ffaa_nh90_base: Helicopter_Base_H {
 		ace_fastroping_enabled = 1;
 		ace_fastroping_ropeOrigins[] = {"p_rapel1","p_rapel2","p_rapel3","p_rapel4"};
 		ace_fastroping_onCut = QFUNC(onCut); 			// ffaa_comp_ace_main_fnc_onCut;
@@ -166,7 +158,7 @@ class CfgVehicles {
             };
         };
     };
-    class ffaa_et_leopardo_base: MBT_01_base_F {
+    class ffaa_et_leopardo_base: Tank_F {
 		ace_refuel_fuelCapacity = 1160;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
@@ -233,22 +225,35 @@ class CfgVehicles {
     class ffaa_et_lince_base : MRAP_01_base_F {
 		ace_refuel_fuelCapacity = 180;
 	};
-	// Soldiers
-    class ffaa_soldado_base;
-	class ffaa_famet_uniforme_b : ffaa_soldado_base {
+	// Uniformes
+    class ffaa_uniform_base;
+	class ffaa_famet_uniforme_b : ffaa_uniform_base {
 		 ACE_GForceCoef = 0.8;
 	};
-    class ffaa_piloto_famet : ffaa_soldado_base {
-        ACE_GForceCoef = 0.8;
-    };
-    class ffaa_pilot_her : ffaa_soldado_base {
-        ACE_GForceCoef = 0.8;
-    };
-	class ffaa_pilot_harri_uniforme : ffaa_soldado_base {
-		 ACE_GForceCoef = 0.55;
+	class ffaa_famet_uniforme_d : ffaa_uniform_base {
+		 ACE_GForceCoef = 0.8;
 	};
-    class ffaa_pilot_harri : ffaa_soldado_base {
+	class ffaa_pilot_her_uniforme_b : ffaa_uniform_base {
+		 ACE_GForceCoef = 0.8;
+	};
+	class ffaa_pilot_her_uniforme_d : ffaa_uniform_base {
+		 ACE_GForceCoef = 0.8;
+	};
+    class ffaa_pilot_harri_uniforme : ffaa_uniform_base {
+		 ACE_GForceCoef = 0.8;
+	};
+	// Soldados
+	class ffaa_soldado_base;
+	class ffaa_piloto_famet : ffaa_soldado_base {
         ACE_GForceCoef = 0.55;
     };
-    
+	class ffaa_pilot_her : ffaa_soldado_base {
+		ACE_GForceCoef = 0.55;
+	};
+	class ffaa_pilot_f18: ffaa_soldado_base {
+		 ACE_GForceCoef = 0.55;
+	};
+    class ffaa_pilot_harri: ffaa_soldado_base {
+        ACE_GForceCoef = 0.55;
+    };
 };
