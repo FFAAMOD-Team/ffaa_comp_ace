@@ -26,7 +26,7 @@ class ffaa_CowsSlot_G36 : ffaa_CowsSlot
 };
 
 // shared optic mode of the carry handle optic
-class FFAA_G36CarryHandleScope_base {	
+class FFAA_G36CarryHandleScope_base {
 	opticsID = 1;
 	useModelOptics = 1;
 	opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur1"};
@@ -438,43 +438,91 @@ class CfgWeapons {
         ACE_barrelTwist=0;
         ACE_barrelLength=510;
     };
-    // Uniformes
-    class Uniform_Base;
+	// Uniformes
+	class Uniform_Base;
+	class ffaa_famet_uniforme_item_b : Uniform_Base {
+		ace_gforcecoef = 0.8;
+	};
+	class ffaa_famet_uniforme_item_d : Uniform_Base {
+		ace_gforcecoef = 0.8;
+	};
+	class ffaa_pilot_harri_uniforme_item : Uniform_Base {
+		ace_gforcecoef = 0.8;
+	};
+	class ffaa_pilot_her_uniforme_item : Uniform_Base {
+		ace_gforcecoef = 0.8;
+	};
+	class ffaa_pilot_her_uniforme_item_d : Uniform_Base {
+		ace_gforcecoef = 0.8;
+	};
+	// Cascos
     class H_HelmetB;
-    class HelmetBase;
-    class ffaa_pilot_harri_uniforme_item : Uniform_Base {
-        ace_hearing_protection=1;
-        ace_hearing_lowerVolume=0.80;
-    };
-    class ffaa_pilot_her_uniforme_item : Uniform_Base {
-        ace_hearing_protection=0.85;
-        ace_hearing_lowerVolume=0.75;
-    };
-    // Uniforme piloto hercules desertico heredado del boscoso
-    class ffaa_famet_uniforme_item_b : Uniform_Base {
-        ace_hearing_protection=0.85;
-        ace_hearing_lowerVolume=0.75;
-    };
-    class ffaa_famet_uniforme_item_d : Uniform_Base {
-        ace_hearing_protection=0.85;
-        ace_hearing_lowerVolume=0.75;
-    };
-    // Cascos
-    class ffaa_casco_hercules_piloto : HelmetBase {
-        ace_hearing_protection=0.5;
-        ace_hearing_lowerVolume=0.75;
-    };
-    class ffaa_moe_casco_01_1_d : H_HelmetB {
-        ace_hearing_protection=0.40;
-        ace_hearing_lowerVolume=0.50;
-    };
-    class ffaa_moe_casco_01_1_b;
-    class ffaa_moe_casco_02_1_d : ffaa_moe_casco_01_1_b {
-        ace_hearing_protection=0.7;
-        ace_hearing_lowerVolume=0.75;
-    };
-    class ffaa_casco_famet_tigre : H_HelmetB {
-        ace_hearing_protection=0.95;
-        ace_hearing_lowerVolume=0.80;
+	class ffaa_casco_Fast_MTP_H : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_casco_Fast_MTP_H_F : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_casco_Fast_MTP_H_M : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_casco_Fast_MTP_H_C : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_casco_Fast_MTP_H_C_F : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_casco_Fast_MTP_H_C_M : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_casco_Fast_Bump_Tan_H_B_L: H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_moe_casco_02_1_d : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_moe_casco_02_2_d : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_moe_casco_02_3_d : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_moe_casco_02_4_d : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_moe_casco_02_5_d : H_HelmetB {
+		ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0;
+	};
+	class ffaa_brilat_casco_tripulacion: H_HelmetB {
+		ace_hearing_protection=0.85;
+        ace_hearing_lowerVolume=0.6;
+	};
+	class ffaa_casco_famet_piloto: H_HelmetB {
+		ace_hearing_protection=0.85;
+        ace_hearing_lowerVolume=0.6;
+	};
+	class ffaa_casco_famet_crew: H_HelmetB {
+		ace_hearing_protection=0.85;
+        ace_hearing_lowerVolume=0.6;
+	};
+	class ffaa_casco_famet_hmsd: H_HelmetB {
+		ace_hearing_protection=0.85;
+        ace_hearing_lowerVolume=0.6;
+	};
+    class ffaa_casco_hercules_piloto : H_HelmetB {
+        ace_hearing_protection=0.75;
+        ace_hearing_lowerVolume=0.5;
     };
 };
