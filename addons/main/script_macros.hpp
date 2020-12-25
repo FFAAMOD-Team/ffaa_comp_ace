@@ -43,21 +43,3 @@
 			};\
 		};\
 	};
-    
-#define BASECLASS_WEAPON_CARRY_HANDLE(classname,baseclass) \
-	class classname : baseclass \
-    { \
-        author="$STR_FFAA_AUTOR_FFAAMOD"; \
-        scope = 2; \
-        baseWeapon = classname ; \
-    };
-    
-#define UNLOAD_WEAPON_CARRY_HANDLE(classname,baseclass) \
-	class classname : baseclass \
-    { \
-        author="$STR_FFAA_AUTOR_FFAAMOD"; \
-        scope = 2; \
-        baseWeapon = classname ; \
-        CBA_CarryHandleType = ""; \
-		weaponInfoType = "RscWeaponZeroing"; \
-    };
