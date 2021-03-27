@@ -109,8 +109,6 @@ class CfgVehicles {
                 ACE_fcs_minDistance=200;
                 ACE_fcs_maxDistance=9990;
                 ACE_fcs_distanceInterval=5;
-                discreteDistance[]={};
-                discreteDistanceInitIndex=0;
             };
         };
     };
@@ -153,8 +151,6 @@ class CfgVehicles {
                 ACE_fcs_minDistance=100;
                 ACE_fcs_maxDistance=2400;
                 ACE_fcs_distanceInterval=5;
-                discreteDistance[]={};
-                discreteDistanceInitIndex=0;
             };
         };
     };
@@ -164,10 +160,8 @@ class CfgVehicles {
             class MainTurret: MainTurret {
                 ACE_fcs_enabled=1;
                 ACE_fcs_minDistance=100;
-                ACE_fcs_maxDistance=2400;
+                ACE_fcs_maxDistance=4000;
                 ACE_fcs_distanceInterval=5;
-                discreteDistance[]={};
-                discreteDistanceInitIndex=0;
             };
         };
     };
