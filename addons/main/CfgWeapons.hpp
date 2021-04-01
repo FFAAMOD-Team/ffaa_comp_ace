@@ -9,6 +9,7 @@ class ffaa_CowsSlot_G36 : ffaa_CowsSlot
 	class compatibleItems : compatibleItems
 	{
 		ffaa_optic_g36_holo = 1;
+		ffaa_optic_romeo4t_black_g36 = 1;
         ffaa_optic_Yorris_g36 = 1;
         ffaa_optic_Aco_g36 = 1;
         ffaa_optic_ACO_grn_g36 = 1;
@@ -110,6 +111,32 @@ class CfgWeapons {
             };
         };
     };
+	class ffaa_optic_romeo4t_black: ItemCore {
+		scope = 2;
+		author="$STR_FFAA_AUTOR_FFAAMOD";
+		ACE_ScopeAdjust_Vertical[]={ -4, 30 };
+        ACE_ScopeAdjust_Horizontal[]={ -6, 6 };
+        ACE_ScopeAdjust_VerticalIncrement=1;
+        ACE_ScopeAdjust_HorizontalIncrement=1;
+        class ItemInfo: InventoryOpticsItem_Base_F {
+            class OpticsModes {
+                class ffaa_Kolimator ;
+            };
+        };
+    };
+	class ffaa_optic_romeo4t_black_g36 : ffaa_optic_romeo4t_black {
+		scope = 1;
+		author="$STR_FFAA_AUTOR_FFAAMOD";
+		class CBA_ScriptedOptic: FFAA_G36CarryHandleScriptedOptic_base {};
+		weaponInfoType = "RscWeaponZeroing";
+		class ItemInfo : ItemInfo {
+			modelOptics = "\x\cba\addons\optics\cba_optic_big_90.p3d";
+			class OpticsModes: OpticsModes {
+				class ffaa_romeo4t : FFAA_G36CarryHandleScope_base {};
+				class ffaa_Kolimator : ffaa_Kolimator { opticsID = 2; };
+			};
+		};
+	};
     class ffaa_optic_mg4_g36: ItemCore {
         ACE_ScopeAdjust_Vertical[]={ -4, 30 };
         ACE_ScopeAdjust_Horizontal[]={ -6, 6 };

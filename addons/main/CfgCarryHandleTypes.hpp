@@ -1,6 +1,7 @@
 class CBA_CarryHandleTypes {
     class FFAA_G36_CarryHandle {
 		ffaa_optic_holografico = "ffaa_optic_g36_holo";
+		ffaa_optic_romeo4t_black = "ffaa_optic_romeo4t_black_g36";
         optic_Yorris = "ffaa_optic_Yorris_g36";
         optic_ACO_grn = "ffaa_optic_ACO_grn_g36";
         optic_Aco = "ffaa_optic_Aco_g36";

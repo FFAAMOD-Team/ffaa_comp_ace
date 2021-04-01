@@ -168,6 +168,10 @@ class CfgVehicles {
 	class ffaa_et_toa : APC_Tracked_02_base_F {
 		ace_refuel_fuelCapacity = 360;
 	};
+	class MBT_01_base_F;
+	class ffaa_m109_base : MBT_01_base_F {
+		ace_refuel_fuelCapacity = 511;
+	};
 	// Trucks
 	class ffaa_m250_base : Truck_03_base_F {
 		ace_refuel_fuelCapacity = 600;
@@ -214,6 +218,9 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 302;
 	};
 	class ffaa_et_vamtac_base : MRAP_01_base_F {
+		ace_refuel_fuelCapacity = 200;
+	};
+	class ffaa_vamtac_st5_base: MRAP_01_base_F {
 		ace_refuel_fuelCapacity = 200;
 	};
     class ffaa_et_lince_base : MRAP_01_base_F {
