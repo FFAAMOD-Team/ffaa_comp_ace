@@ -105,12 +105,10 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 1420;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
-                ACE_fcs_enabled=1;
+                ACE_fcs_enabled=0;
                 ACE_fcs_minDistance=200;
                 ACE_fcs_maxDistance=9990;
                 ACE_fcs_distanceInterval=5;
-                discreteDistance[]={};
-                discreteDistanceInitIndex=0;
             };
         };
     };
@@ -149,12 +147,10 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 700;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
-                ACE_fcs_enabled=1;
+                ACE_fcs_enabled=0;
                 ACE_fcs_minDistance=100;
                 ACE_fcs_maxDistance=2400;
                 ACE_fcs_distanceInterval=5;
-                discreteDistance[]={};
-                discreteDistanceInitIndex=0;
             };
         };
     };
@@ -162,17 +158,19 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 1160;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
-                ACE_fcs_enabled=1;
+                ACE_fcs_enabled=0;
                 ACE_fcs_minDistance=100;
-                ACE_fcs_maxDistance=2400;
+                ACE_fcs_maxDistance=4000;
                 ACE_fcs_distanceInterval=5;
-                discreteDistance[]={};
-                discreteDistanceInitIndex=0;
             };
         };
     };
 	class ffaa_et_toa : APC_Tracked_02_base_F {
 		ace_refuel_fuelCapacity = 360;
+	};
+	class MBT_01_base_F;
+	class ffaa_m109_base : MBT_01_base_F {
+		ace_refuel_fuelCapacity = 511;
 	};
 	// Trucks
 	class ffaa_m250_base : Truck_03_base_F {
@@ -220,6 +218,9 @@ class CfgVehicles {
 		ace_refuel_fuelCapacity = 302;
 	};
 	class ffaa_et_vamtac_base : MRAP_01_base_F {
+		ace_refuel_fuelCapacity = 200;
+	};
+	class ffaa_vamtac_st5_base: MRAP_01_base_F {
 		ace_refuel_fuelCapacity = 200;
 	};
     class ffaa_et_lince_base : MRAP_01_base_F {
