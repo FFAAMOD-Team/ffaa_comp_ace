@@ -15,7 +15,7 @@ class CfgPatches {
     class ace_ffaa_comp_ace {
         name = COMPONENT_NAME;
         units[] = {};
-        weapons[]={"ACE_ffaa_armas_c100_used","ACE_ffaa_armas_c90_used","ACE_ffaa_armas_c100_ready","ACE_ffaa_armas_c100_used"};
+        weapons[]={"ACE_ffaa_armas_c100_used","ACE_ffaa_armas_c90_used","ACE_ffaa_armas_c100_ready","ACE_ffaa_armas_c100_vosel_ready","ACE_ffaa_armas_c100_used"};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[]={
 			"cba_disposable",
@@ -59,4 +59,5 @@ class CfgPatches {
 class CBA_DisposableLaunchers {
     ACE_ffaa_armas_c90_ready[] = {"ffaa_armas_c90","ACE_ffaa_armas_c90_used"};
     ACE_ffaa_armas_c100_ready[] = {"ffaa_armas_c100","ACE_ffaa_armas_c100_used"};
+	ACE_ffaa_armas_c100_vosel_ready[] = {"ffaa_armas_c100_vosel","ACE_ffaa_armas_c100_used"};
 };

@@ -377,7 +377,7 @@ class CfgWeapons {
         scope = 1;
         scopeArsenal = 1;
 		baseWeapon = "ffaa_armas_c100";
-        magazines[] = {"ffaa_mag_c100"};
+        magazines[] = {"ffaa_mag_c100","ffaa_mag_c100_biv","ffaa_mag_c100_abk"};
         class EventHandlers {
             fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
         };
@@ -385,11 +385,31 @@ class CfgWeapons {
             mass = 100;
         };
     };
+	class ACE_ffaa_armas_c100_vosel_ready: ffaa_armas_c100 {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+		baseWeapon = "ffaa_armas_c100";
+        magazines[] = {"ffaa_mag_c100","ffaa_mag_c100_biv","ffaa_mag_c100_abk"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 100;
+        };
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "ffaa_optic_vosel";
+			};
+		};
+    };
     class ffaa_armas_c90: Launcher_Base_F {
         scope = 2;
         scopeArsenal = 2;
         baseWeapon = "ffaa_armas_c90";
-        // magazineWell[] = {};
         magazines[] = {"CBA_FakeLauncherMagazine"};
         reloadMagazineSound[] = {"",1,1};
         magazineReloadTime = 0.1;
@@ -418,7 +438,7 @@ class CfgWeapons {
         scope = 1;
         scopeArsenal = 1;
         baseWeapon = "ffaa_armas_c90";
-        magazines[] = {"ffaa_mag_c90"};
+        magazines[] = {"ffaa_mag_c90","ffaa_mag_c90_CR_AM","ffaa_mag_c90_CR_FIM","ffaa_mag_c90_CR_BK"};
         class EventHandlers {
             fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
         };
