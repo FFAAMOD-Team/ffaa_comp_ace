@@ -15,7 +15,32 @@ class CfgMagazines {
 		scope = 1;
 		allowedSlots[] = {};
     };
+	class ffaa_mag_c90_CR_AM: CA_LauncherMagazine {
+        mass = 62;
+		scope = 1;
+		allowedSlots[] = {};
+    };
+	class ffaa_mag_c90_CR_FIM: CA_LauncherMagazine {
+        mass = 62;
+		scope = 1;
+		allowedSlots[] = {};
+    };
+	class ffaa_mag_c90_CR_BK: CA_LauncherMagazine {
+        mass = 62;
+		scope = 1;
+		allowedSlots[] = {};
+    };
     class ffaa_mag_c100: CA_LauncherMagazine {
+        mass = 210;
+		scope = 1;
+		allowedSlots[] = {};
+    };
+	class ffaa_mag_c100_biv: CA_LauncherMagazine {
+        mass = 210;
+		scope = 1;
+		allowedSlots[] = {};
+    };
+	class ffaa_mag_c100_abk: CA_LauncherMagazine {
         mass = 210;
 		scope = 1;
 		allowedSlots[] = {};

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project name="ffaa">
+	<Container name="ffaa_comp_ace_main">
+		<Key ID="STR_FFAA_ACE_DN_C100">
+			<Original>C 100 M2 (AT)</Original>
+			<English>C 100 M2 (AT)</English>
+			<Spanish>C 100 M2 (AT)</Spanish>
+		</Key>
+		<Key ID="STR_FFAA_ACE_DN_C100_BIV">
+			<Original>C 100 M2 (BIV)</Original>
+			<English>C 100 M2 (BIV)</English>
+			<Spanish>C 100 M2 (BIV)</Spanish>
+		</Key>
+		<Key ID="STR_FFAA_ACE_DN_C100_ABK">
+			<Original>C 100 M2 (ABK)</Original>
+			<English>C 100 M2 (ABK)</English>
+			<Spanish>C 100 M2 (ABK)</Spanish>
+		</Key>
+		<Key ID="STR_FFAA_ACE_DN_C100_USED">
+			<Original>C 100 M2 (Used)</Original>
+			<English>C 100 M2 (Used)</English>
+			<Spanish>C 100 M2 (Usado)</Spanish>
+		</Key>
+		<Key ID="STR_FFAA_ACE_DN_C90">
+			<Original>C 90 (CR-RB)</Original>
+			<English>C 90 (CR-RB)</English>
+			<Spanish>C 90 (CR-RB)</Spanish>
+		</Key>
+		<Key ID="STR_FFAA_ACE_DN_C90_CR_AM">
+			<Original>C 90 (CR-AM)</Original>
+			<English>C 90 (CR-AM)</English>
+			<Spanish>C 90 (CR-AM)</Spanish>
+		</Key>
+		<Key ID="STR_FFAA_ACE_DN_C90_CR_FIM">
+			<Original>C 90 (CR-FIM)</Original>
+			<English>C 90 (CR-FIM)</English>
+			<Spanish>C 90 (CR-FIM)</Spanish>
+		</Key>
+		<Key ID="STR_FFAA_ACE_DN_C90_CR_BK">
+			<Original>C 90 (CR-BK)</Original>
+			<English>C 90 (CR-BK)</English>
+			<Spanish>C 90 (CR-BK)</Spanish>
+		</Key>
+		<Key ID="STR_FFAA_ACE_DN_C90_USED">
+			<Original>C 90 (Used)</Original>
+			<English>C 90 (Used)</English>
+			<Spanish>C 90 (Usado)</Spanish>
+		</Key>
+	</Container>
+</Project>
