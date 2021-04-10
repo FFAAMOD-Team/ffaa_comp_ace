@@ -348,6 +348,7 @@ class CfgWeapons {
     class ffaa_armas_c100: Launcher_Base_F {
         scope = 2;
         scopeArsenal = 2;
+		displayName = "$STR_FFAA_ACE_DN_C100";
         baseWeapon = "ffaa_armas_c100";
         magazines[]={"CBA_FakeLauncherMagazine"};
         reloadMagazineSound[] = {"",1,1};
@@ -360,13 +361,27 @@ class CfgWeapons {
             mass = 310; // launcher 100 (4,5 KG) , magazine 210 (9,5 KG)
         };
     };
+	class ffaa_armas_c100_biv: ffaa_armas_c100 {
+		author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "$STR_FFAA_ACE_DN_C100_BIV";
+        baseWeapon = "ffaa_armas_c100_biv";
+    };
+	class ffaa_armas_c100_abk: ffaa_armas_c100 {
+		author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "$STR_FFAA_ACE_DN_C100_ABK";
+        baseWeapon = "ffaa_armas_c100_abk";
+    };
     class ACE_ffaa_armas_c100_used : ffaa_armas_c100 {
         scope=1;
         scopeArsenal = 1;
         baseWeapon = "ACE_ffaa_armas_c100_used";
         author="$STR_FFAA_AUTOR_FFAAMOD";
-        displayName="$STR_FFAA_C100_USED";
-        descriptionShort="$STR_FFAA_C100_USED";
+        displayName="$STR_FFAA_ACE_DN_C100_USED";
+        descriptionShort="$STR_FFAA_ACE_DN_C100_USED";
         weaponPoolAvailable=0;
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 100;
@@ -378,6 +393,32 @@ class CfgWeapons {
         scopeArsenal = 1;
 		baseWeapon = "ffaa_armas_c100";
         magazines[] = {"ffaa_mag_c100","ffaa_mag_c100_biv","ffaa_mag_c100_abk"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 100;
+        };
+    };
+	class ACE_ffaa_armas_c100_biv_ready: ffaa_armas_c100_biv {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+		baseWeapon = "ffaa_armas_c100_biv";
+        magazines[] = {"ffaa_mag_c100_biv","ffaa_mag_c100","ffaa_mag_c100_abk"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 100;
+        };
+    };
+	class ACE_ffaa_armas_c100_abk_ready: ffaa_armas_c100_abk {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+		baseWeapon = "ffaa_armas_c100_abk";
+        magazines[] = {"ffaa_mag_c100_abk","ffaa_mag_c100_biv","ffaa_mag_c100"};
         class EventHandlers {
             fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
         };
@@ -410,6 +451,7 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         baseWeapon = "ffaa_armas_c90";
+		displayName = "$STR_FFAA_ACE_DN_C90";
         magazines[] = {"CBA_FakeLauncherMagazine"};
         reloadMagazineSound[] = {"",1,1};
         magazineReloadTime = 0.1;
@@ -421,13 +463,34 @@ class CfgWeapons {
             mass = 150; // launcher 88 (3,9 KG), magazine 62 (2,8 KG)
         };
     };
+	class ffaa_armas_c90_CR_AM: ffaa_armas_c90 {
+		author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "$STR_FFAA_ACE_DN_C90_CR_AM";
+        baseWeapon = "ffaa_armas_c90_CR_AM";
+    };
+	class ffaa_armas_c90_CR_FIM: ffaa_armas_c90 {
+		author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "$STR_FFAA_ACE_DN_C90_CR_FIM";
+        baseWeapon = "ffaa_armas_c90_CR_FIM";
+    };
+	class ffaa_armas_c90_CR_BK: ffaa_armas_c90 {
+		author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "$STR_FFAA_ACE_DN_C90_CR_BK";
+        baseWeapon = "ffaa_armas_c90_CR_BK";
+    };
     class ACE_ffaa_armas_c90_used : ffaa_armas_c90 {
         scope=1;
         scopeArsenal = 1;
         baseWeapon = "ACE_ffaa_armas_c90_used";
         author="$STR_FFAA_AUTOR_FFAAMOD";
-        displayName="$STR_FFAA_C90_USED";
-        descriptionShort="$STR_FFAA_C90_USED";
+        displayName="$STR_FFAA_ACE_DN_C90_USED";
+        descriptionShort="$STR_FFAA_ACE_DN_C90_USED";
         weaponPoolAvailable=0;
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 88;
@@ -440,7 +503,46 @@ class CfgWeapons {
         baseWeapon = "ffaa_armas_c90";
         magazines[] = {"ffaa_mag_c90","ffaa_mag_c90_CR_AM","ffaa_mag_c90_CR_FIM","ffaa_mag_c90_CR_BK"};
         class EventHandlers {
-            fired = "_this call CBA_fnc_firedDisposable"; // this weapon eventhandler is required!
+            fired = "_this call CBA_fnc_firedDisposable";
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 88;
+        };
+    };
+	class ACE_ffaa_armas_c90_CR_AM_ready: ffaa_armas_c90_CR_AM {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+        baseWeapon = "ffaa_armas_c90_CR_AM";
+        magazines[] = {"ffaa_mag_c90_CR_AM","ffaa_mag_c90","ffaa_mag_c90_CR_FIM","ffaa_mag_c90_CR_BK"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable";
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 88;
+        };
+    };
+	class ACE_ffaa_armas_c90_CR_FIM_ready: ffaa_armas_c90_CR_FIM {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+        baseWeapon = "ffaa_armas_c90_CR_FIM";
+        magazines[] = {"ffaa_mag_c90_CR_FIM","ffaa_mag_c90_CR_AM","ffaa_mag_c90","ffaa_mag_c90_CR_BK"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable";
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 88;
+        };
+    };
+	class ACE_ffaa_armas_c90_CR_BK_ready: ffaa_armas_c90_CR_BK {
+        author="$STR_FFAA_AUTOR_FFAAMOD";
+        scope = 1;
+        scopeArsenal = 1;
+        baseWeapon = "ffaa_armas_c90_CR_BK";
+        magazines[] = {"ffaa_mag_c90_CR_BK","ffaa_mag_c90_CR_FIM","ffaa_mag_c90_CR_AM","ffaa_mag_c90"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable";
         };
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 88;
