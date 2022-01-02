@@ -7,6 +7,7 @@
 #include "CfgGlasses.hpp"
 #include "Extended_Eventhandlers.hpp"
 #include "CfgCarryHandleTypes.hpp"
+#include "CfgFactionClasses.hpp"
 
 
 class CfgPatches {
