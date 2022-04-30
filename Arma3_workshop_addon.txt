@@ -1,5 +1,7 @@
 ### Español ###
 
+El FFAA MOD ACE3 Compatibility Addon ya no es necesario a partir de la version 6.1.8 del FFAA MOD.
+
 Este addon es requerido para conseguir que el FFAA MOD funcione junto con el mod ACE 3.
 
 Este addon hace que sean compatible las siguientes caracteríticas:
@@ -23,6 +25,8 @@ Pagina oficial : http://ffaamod.es
 Reporte de errores [url=https://gitlab.com/FFAAMOD-Team/FFAAMOD/-/issues]aquí[/url]
 
 ### English ###
+
+The FFAA MOD ACE3 Compatibility Addon is no longer needed since version 6.1.8 of FFAA MOD.
 
 This addon is needed to ensure full compatibility with ACE 3.
 
