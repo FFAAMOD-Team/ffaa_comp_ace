@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/FFAAMOD-Team/ffaa_comp_ace/blob/develop/Logo_FFAA_ACE3_cabecera.png" width="720" />
 </p>
-<h1 align="center">[DEPRECATED] FFAA MOD & ACE COMPATIBILITY ADDON</h1>
+<h1 align="center">FFAA MOD & ACE COMPATIBILITY ADDON</h1>
 <p align="center">
   <a href="https://opensource.org/licenses/GPL-3.0">
     <img src="https://img.shields.io/badge/License-GPL-yellow.svg"
