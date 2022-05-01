@@ -1,4 +1,4 @@
-#if __has_include("\ffaa_comp_ace\script_component.hpp")
+#if __has_include("\ffaa_comp_ace\config.cpp")
     // Do not load when ffaa_comp_ace already exists
 #else
 
