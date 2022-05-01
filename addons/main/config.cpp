@@ -1,3 +1,7 @@
+#if __has_include("\ffaa_comp_ace\config.cpp")
+    // Do not load when ffaa_comp_ace already exists
+#else
+
 #include "script_component.hpp"
 #define _ARMA_
 #include "CfgVehicles.hpp"
@@ -7,6 +11,7 @@
 #include "CfgGlasses.hpp"
 #include "Extended_Eventhandlers.hpp"
 #include "CfgCarryHandleTypes.hpp"
+#include "CfgFactionClasses.hpp"
 
 
 class CfgPatches {
@@ -82,3 +87,6 @@ class CBA_DisposableLaunchers {
 	ACE_ffaa_armas_c100_abk_ready[] = {"ffaa_armas_c100_abk","ACE_ffaa_armas_c100_used"};
 	ACE_ffaa_armas_c100_vosel_ready[] = {"ffaa_armas_c100_vosel","ACE_ffaa_armas_c100_used"};
 };
+
+#endif
+
